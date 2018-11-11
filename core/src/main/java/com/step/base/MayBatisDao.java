@@ -13,7 +13,7 @@ public abstract class MayBatisDao<T extends BaseEntity> {
      *
      * @return
      */
-    public T insert(T t) {
+    public int insert(T t) {
         return getMapper().insert(t);
     }
 

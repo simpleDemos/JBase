@@ -5,7 +5,7 @@ public abstract class BaseService<T extends BaseEntity>{
 
     public abstract MayBatisDao<T> getDao();
 
-    public T insert(T t) {
+    public int insert(T t) {
         return getDao().insert(t);
     }
 

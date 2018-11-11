@@ -1,4 +1,4 @@
-package com.step.demo;
+package com.step.demo.model;
 
 import com.step.base.BaseEntity;
 
