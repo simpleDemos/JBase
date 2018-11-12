@@ -1,6 +1,7 @@
-package com.step.demo;
+package com.step.demo.web;
 
 import com.step.base.BaseController;
+import com.step.demo.service.HelloService;
 import com.step.demo.model.Hello;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,9 +25,9 @@ public class HelloController extends BaseController<Hello> {
     }
 
     @GetMapping("1")
-    public Hello hello(){
+    public Hello hello() {
         System.err.println("hello 1!");
-       return helloService.getDao().getMapper().selectById(101L);
+        return helloService.getDao().getMapper().selectById(101L);
     }
 
 }

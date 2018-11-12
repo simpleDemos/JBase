@@ -16,11 +16,13 @@ public abstract class BaseController<T extends BaseEntity> {
 
     @RequestMapping("/save")
     public T save(T t){
-        return getBaseService().insert(t) > 0 ? t : t;
+       //return getBaseService().getDao().getMapper().insert(t) > 0 ? t : t;
+       return getBaseService().insert(t) > 0 ? t : t;
     }
 
     @GetMapping(value="/query/{id}")
     public T selectById(@PathVariable Long id){
+        //return getBaseService().getDao().getMapper().selectOneById(id);
         return getBaseService().selectById(id);
     }
 }

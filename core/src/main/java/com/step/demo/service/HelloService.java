@@ -1,6 +1,7 @@
-package com.step.demo;
+package com.step.demo.service;
 
 import com.step.base.BaseService;
+import com.step.demo.dao.HelloDao;
 import com.step.demo.model.Hello;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

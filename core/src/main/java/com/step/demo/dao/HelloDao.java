@@ -1,4 +1,4 @@
-package com.step.demo;
+package com.step.demo.dao;
 
 import com.step.base.MayBatisDao;
 import com.step.demo.mapper.HelloMapper;
